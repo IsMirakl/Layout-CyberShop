@@ -1,0 +1,500 @@
+:root{
+    --font: 'SF Pro Display', sans-serif;
+    --main-color-black: #000000;
+    --main-color-white: #FFFFFF;
+    --linear-gradient: #211C24;
+}
+
+.figtree {
+    font-family: "Figtree", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    width: 1440px;
+    height: 88px;
+    background-color: var(--main-color-white);
+}
+
+.header__logo{
+    margin-left: 160px;
+}
+
+.nav__search input[type="search"] {
+    text-indent: 40px;
+    border: none;
+    background-color: #F5F5F5;
+    width: 372px;
+    height: 56px;
+    border-radius: 8px;
+    padding: 16px;
+    outline: none;
+    margin-left: 63px;
+}
+.nav__search {
+    position: relative;
+}
+
+.icon__search {
+    position: absolute;
+    top: 50%;
+    left:85px;
+    transform: translateY(-50%);
+}
+
+.link__active{
+    color: black;
+}
+.nav__links ul{
+    font-family: var(--font);
+    font-size: 16px;
+    list-style-type: none;
+    display: flex;
+    gap: 52px;
+    margin-left: 63px;
+}
+
+.nav__icons{
+    display: flex;
+    gap: 30px;
+    margin-left: 90px;
+}
+
+.header__nav{
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.main__banner{
+    width: 1440px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 632px;
+    background: linear-gradient(90.7deg, #211C24 0.64%, #211C24 101%);
+}
+
+
+.main__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 714px;
+    height: 256px;
+    margin-left: 160px;
+}
+
+
+.titles__text .title__one {
+    padding-bottom: -24px;
+    font-size: 25px;
+    color: white;
+    opacity: 40%;
+    font-family: Figtree;
+}
+
+.titles__text .title__two {
+    padding-top: 24px;
+    font-family: var(--font);
+    font-size: 96px;
+    font-weight: 200;
+    line-height: 72px;
+    letter-spacing: -0.01em;
+    color: white;
+}
+
+span {
+    font-family: var(--font);
+    font-weight: 600px;
+}
+
+.body__text {
+    padding-top: 12px;
+    font-size: 18px;
+    font-family: var(--font);
+    color: #909090;
+}
+
+
+.button-container {
+    display: block;
+    margin-top: 24px;
+}
+
+.main__button {
+    background: none;
+    border-radius: 6px;
+    border: 1px solid white;
+    padding: 16px 56px 16px 56px;
+    color: white;
+    font-size: 15px;
+}
+
+
+.main__picture{
+    margin-right: 160px;
+}
+
+
+/*  SECTION smaller Banners   */
+.smaller__banners{
+    width: 1440px;
+    height: 600px;
+}
+
+
+
+.section__cards {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+    
+.card1 {
+    display: flex;
+    align-items: center;
+    width: 720px;
+    height: 328px;
+    grid-column: span 2 / span 2;
+}
+
+.card3 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 720px;
+    height: 600px;
+    background-color: #EDEDED;
+    grid-column: span 2 / span 2;
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
+}
+
+.card4 {
+    display: flex;
+    align-items: center;
+    width: 360px;
+    height: 272px;
+    background-color: #353535;
+    grid-column-start: 2;
+    grid-row-start: 2;
+}
+
+.card5 {
+    display: flex;
+    align-items: center;
+    width: 360px;
+    height: 272px;
+    background-color: #EDEDED;
+    grid-column-start: 1;
+    grid-row-start: 2;
+}
+        
+
+.card1__content{
+    width: 338px;
+    height: 104px;
+}
+
+.card1__title{
+    padding: 0 0 16px;
+    font-family: var(--font);
+    font-size: 49px;
+    line-height: 40px;
+}
+
+.card1__text{
+    font-family: var(--font);
+    font-size: 14px;
+    color: #909090;
+    line-height: 24px;
+}
+
+.card5__content{
+    margin-left: 48px;
+    width: 160px;
+    height: 143px;
+}
+
+.card5__title{
+    padding: 0 0 8px;
+    font-size: 29px;
+    font-family: var(--font);
+    line-height: 40px;
+}
+
+.card5__text{
+    font-family: var(--font);
+    font-size: 14px;
+    color: #909090;
+}
+
+
+.card4__content{
+    margin-left: 16px;
+    width: 160px;
+    height: 144px;
+}
+
+.card4__title{
+    padding: 0 0 8px;
+    font-size: 31px;
+    font-family: var(--font);
+    line-height: 40px;
+    color: white;
+}
+
+
+.card4__text{
+    font-family: var(--font);
+    font-size: 14px;
+    color: #909090;
+}
+
+.card3__content{
+    margin-left: 56px;
+    width: 360px;
+    height: 192px;
+}
+
+
+.card3__title{
+    font-family: var(--font);
+    font-weight: 200;
+    font-size: 64px;
+    line-height: 56px;
+}
+
+.card3__text{
+    padding: 16px 0 16px;
+    font-family: var(--font);
+    font-size: 14px;
+    line-height: 24px;
+    color: #909090;
+}
+
+.card3__btn{
+    font-size: 15px;
+    font-family: var(--font);
+    font-weight: 500;
+    width: 184px;
+    height: 56px;
+    border: 1px solid black;
+    background: none;
+    border-radius: 6px;
+    padding: 16px 56px 16px 56px;
+}
+
+
+.section__category{
+    width: 1440px;
+    height: 352px;
+    color: #FAFAFA;
+}
+
+.section__top{
+    margin-top: 80px;
+    padding-left: 160px;
+    padding-right: 160px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-category__title{
+    font-family: var(--font);
+    font-size: 24px;
+    font-weight: 500;
+    letter-spacing: 1%;
+    line-height: 32px;
+    color: black;
+}
+
+.test img{
+    margin-top: 4px;
+    margin-right: 16px;
+}
+
+
+.section__categories{
+    display: grid;
+    gap: 32px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    margin-left: 160px;
+    margin-top: 32px;
+    width: 1120px;
+    height: 128px;
+}
+
+
+
+.categories__card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    width: 160px;
+    height: 128px;
+    background-color: #EDEDED;
+    text-align: center;
+}
+
+
+.card__text{
+    font-family: var(--font);
+    font-size: 16px;
+    color: var(--main-color-black);
+}
+
+
+/*
+ SECTION Products
+*/
+
+.section__products{
+    margin: 0 auto;
+    width: 1140px;
+    height: 1056px;
+    background-color: var(--main-color-white);
+}
+
+.products__tags{
+    display: flex;
+    margin-bottom: 32px;
+    gap: 32px;
+    width: 1120px;
+    height: 32px;
+}
+
+
+.products__tags a{
+    text-align: center;
+    font-family: var(--font);
+    color: #000000;
+    font-size: 18px;    
+}
+
+
+.products__container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 16px;
+    width: 1120px;
+    height: 880px;
+}
+
+
+
+.products__cards{
+    width: 268px;
+    height: 432px;
+    background-color: #F6F6F6;
+}
+
+.top__section{
+    margin: 24px 16px 16px;
+    width: 236px;
+    height: 32px;
+    display: flex;
+    justify-content: end;
+}
+
+
+.product__img__container {
+    position: relative;
+    text-align: center;
+}
+
+
+.product__img__container img {
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.product__info {
+    padding-top: 16px;
+}
+
+.product__title-container {
+    width: 236px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.product__title{
+    width: 236px;
+    height: 48px;
+    font-weight: 500;
+    font-family: var(--font);
+    font-size: 17px;
+}
+
+.product__cost{
+    font-family: var(--font);
+    font-size: 24px;
+    letter-spacing: 3%;
+    font-weight: 600;
+    text-align: center;
+    padding-bottom: 24px;
+}
+
+
+.product__button{
+    width: 183px;
+    height: 48px;
+    background: black;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 48px;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.section__banners{
+    width: 1440px;
+    height: 640px;
+}
+
+
+.banners__container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+
+
+
+.banners__card{
+    width: 360px;
+    height: 640px;
+}
+
+
+
+
+.banners__card__info{
+    width: 296px;
+    height: 208px;
+}
